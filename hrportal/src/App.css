@@ -1,0 +1,230 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+.container{
+  display:flex;
+
+
+
+}
+main{
+  width: 100%;
+  padding: 0px;
+}
+.sidebar{
+  background: #fff;
+  color: #6582BD;;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  position:relative;
+
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 20px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #6582BD;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+.link:hover{
+  background: #c45515;
+  color: #fff;
+  transition: all 0.5s;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scale(1.1);
+}
+.active{
+  background: #FFDB74;
+  color: rgb(101, 130, 185);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.icon, .link_text{
+  font-size: 20px;
+}
+
+
+th {
+padding: 8px;
+border: 1px solid #fff;
+}
+
+tbody tr:nth-child(even) {
+background-color: #f9f9f9;
+border-radius: 30px;
+}
+
+.hr-bg {
+  background-color: rgb(101, 130, 185);
+  width: auto;
+  height: 100%;
+  margin: 0;
+  font-style: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hr-bg h2 {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.selfie-record {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgb(51, 50, 50);
+  margin: 0.5rem;
+  width: auto;
+  position: relative; 
+}
+.downloadss{
+  display: flex;
+  justify-content: center;
+  gap: 10px;;
+
+}
+
+.selfie-record th {
+  background-color: #312f2fb9;
+  row-gap: 2px;
+  color: #fff;
+}
+
+.selfie-record th,
+.selfie-record td {
+  width: 30%; 
+  height: 50px;
+  border: 1px solid #ccc;
+  align-content: center;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+}
+.selfie-record td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 3px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#employee-name, #fromDate, #toDate {
+  width: 90%;
+  height: 35px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-left: 3%;
+  margin-right: 3%;
+  
+  
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container select::-ms-expand,
+.form-container select::-webkit-select-arrow {
+  display: none;
+}
+
+.form-container select option:checked {
+  background-color: #ffdb74; 
+  color: #fff; 
+}
+.form-container button {
+  width: 50%;
+  padding: 2%;
+  margin: 10px;
+  height: 40%;
+  background-color: #ffffff;
+  color: #6582BD;
+  border: 1px solid #6582BD;
+  border-radius: 15px;
+  cursor: pointer;
+  box-sizing: border-box;  
+} 
+.form-container button:hover {
+  color: white;
+  background-color: red;
+}
+.selfie-record button{
+  background-color: #ffffff;
+  color: black;
+  width: 55px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  bottom: 2px;
+  transform: translateY(-50);
+  position: relative;
+  border-color: #FFDB74;
+  border: 2px solid #6582BD;
+}
+.selfie-record button:hover{
+  color:white;
+  background-color: rgba(54, 177, 91);
+  transition: all 0.5s;
+  border: none;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 430px) {
+  .selfie-record th {
+    background-color: #312f2fb9;
+    row-gap: 2px;
+    color: #fff;
+    font-size: 10px;
+
+
+  }
+
+}
+  
+
